@@ -55,6 +55,7 @@ class PANet(nn.Module):
         features = [
             self.feature_transform_3(features[0]), 
             self.feature_transform_4(features[1]),  
+            features[2],
         ]
         downstream_feature5 = self.down_stream_conv5(features[2])  
       
